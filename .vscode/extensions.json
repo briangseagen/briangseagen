@@ -1,0 +1,7 @@
+{
+  "recommendations": [
+    "ms-azuretools.vscode-azurefunctions",
+    "formulahendry.azure-storage-explorer",
+    "ms-azuretools.vscode-azurestorage"
+  ]
+}
