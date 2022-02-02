@@ -8,13 +8,13 @@ terraform {
     }
   }
 
-  backend "remote" {
-    organization = "Seagen"
+  # backend "remote" {
+  #   organization = "Seagen"
 
-    workspaces {
-      prefix = "BrianAZR-"
-    }
-  }
+  #   workspaces {
+  #     prefix = "BrianAZR-"
+  #   }
+  # }
 
 }
 

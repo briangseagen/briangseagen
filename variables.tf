@@ -1,35 +1,41 @@
 variable "department" {
-  type = string
+  type    = string
+  default = "Eng"
 }
 
 variable "business_owner" {
-  type = string
+  type    = string
+  default = "BrianG"
 }
 
 variable "ptso" {
-  type = string
+  type    = string
+  default = "ptso"
 }
 
 variable "default_region" {
   description = "Default Region"
   type        = string
+  default     = "WestUS2"
 }
 
 variable "environment" {
   description = "Environment"
   type        = string
+  default     = "dev"
 }
 
 variable "app_name" {
   description = "App Name"
   type        = string
-  default     = "queuetrigger"
+  default     = "HttpExample"
 }
 
 // Local debugging - this will be removed and moved to TF Cloud variable
 variable "gh_token" {
   description = "GitHub token for auth"
   type        = string
+  default     = "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"
 }
 
 variable "service_plan" {
@@ -41,7 +47,7 @@ variable "service_plan" {
 variable "storage_account_name" {
   description = "Storage disk name, has to be only letters and between 3 and 24 chars"
   type        = string
-  default     = "bgfuncdisk"
+  default     = "bgstorage"
 }
 
 variable "ARM_THREEPOINTZERO_BETA_RESOURCES" {
@@ -49,12 +55,3 @@ variable "ARM_THREEPOINTZERO_BETA_RESOURCES" {
   type        = bool
   default     = true
 }
-
-resource "random_string" "random" {
-  length  = 4
-  upper   = false
-  lower   = true
-  number  = true
-  special = false
-}
-
