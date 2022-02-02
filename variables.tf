@@ -35,7 +35,6 @@ variable "app_name" {
 variable "gh_token" {
   description = "GitHub token for auth"
   type        = string
-  default     = "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"
 }
 
 variable "service_plan" {
